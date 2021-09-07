@@ -13,15 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $comics = config('comics');
-    $data = ['db'=> $comics];
-    return view('comics', $data);
-})->name('comics');
+Route::get('/', 'ComiController@index')->name('comics');
 
-Route::get('/characters', function () {
-    return view('characters');
-})->name('characters');
+Route::get('/characters', 'StaticController@index')->name('characters');
 
 Route::get('/movie', function () {
     return view('movie');
