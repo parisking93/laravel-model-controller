@@ -17,39 +17,25 @@ Route::get('/', 'ComiController@index')->name('comics');
 Route::get('/comic/{id}', 'ComiController@singleComic')->name('singleComic');
 
 
-Route::get('/characters', 'StaticController@index')->name('characters');
+Route::get('/characters', 'StaticController@characters')->name('characters');
+Route::get('/movie', 'StaticController@movie')->name('movie');
+Route::get('/tv', 'StaticController@tv')->name('tv');
+Route::get('/game', 'StaticController@game')->name('game');
+Route::get('/collectibles', 'StaticController@collectibles')->name('collectibles');
+Route::get('/videos', 'StaticController@videos')->name('videos');
+Route::get('/fans', 'StaticController@fans')->name('fans');
+Route::get('/news', 'StaticController@news')->name('news');
+Route::get('/shop', 'StaticController@shop')->name('shop');
 
-Route::get('/movie', function () {
-    return view('movie');
-})->name('movie');
 
-Route::get('/tv', function () {
-    return view('tv');
-})->name('tv');
 
-Route::get('/game', function () {
-    return view('game');
-})->name('game');
 
-Route::get('/collectibles', function () {
-    return view('collectibles');
-})->name('collectibles');
+// Memo 
+// Route::get('/game', function () {
+//     return view('game');
+// })->name('game');
 
-Route::get('/videos', function () {
-    return view('videos');
-})->name('videos');
 
-Route::get('/fans', function () {
-    return view('fans');
-})->name('fans');
-
-Route::get('/news', function () {
-    return view('news');
-})->name('news');
-
-Route::get('/shop', function () {
-    return view('shop');
-})->name('shop');
 
 
 
