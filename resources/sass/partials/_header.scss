@@ -12,20 +12,34 @@ header {
         height: 100px;
         margin: auto;
     
-    
+        nav {
+            height: 100%;
+            line-height: 100px;
+        }
         ul {
+            height: 100%;
             li {
                 display: inline-block;
                 margin: 0 5px;
+                height: 100%;
                 a {
+                    display: inline-block;
                     color: $black;
                     text-transform: uppercase;
                     font-weight: 600;
-                }
+                    height: 100%;
 
+                }
+                &:hover {
+                    box-shadow: 0 -2px 0px 0px $blue-link inset;
+                }
                 &:hover a{
                     color: $blue-link;
                 }
+                &:active a{
+                    color: $blue-link;
+                }
+
             }
 
         }

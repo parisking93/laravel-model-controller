@@ -13,7 +13,6 @@ class ComiController extends Controller
     }
     public function singleComic($id) {
         $comics = Comic::where('id',$id)->first();
-        // dd($comics->id);
         return view('singleComic', compact('comics'));
     }
 }

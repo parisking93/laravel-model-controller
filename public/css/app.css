@@ -28,16 +28,32 @@ header .container-center {
   height: 100px;
   margin: auto;
 }
+header .container-center nav {
+  height: 100%;
+  line-height: 100px;
+}
+header .container-center ul {
+  height: 100%;
+}
 header .container-center ul li {
   display: inline-block;
   margin: 0 5px;
+  height: 100%;
 }
 header .container-center ul li a {
+  display: inline-block;
   color: black;
   text-transform: uppercase;
   font-weight: 600;
+  height: 100%;
+}
+header .container-center ul li:hover {
+  box-shadow: 0 -2px 0px 0px #0282f9 inset;
 }
 header .container-center ul li:hover a {
+  color: #0282f9;
+}
+header .container-center ul li:active a {
   color: #0282f9;
 }
 header .container-center .container-logo img {
