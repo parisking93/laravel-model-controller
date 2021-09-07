@@ -13,6 +13,25 @@
         }
         h3 {
             margin-bottom: 20px;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.container-single-comic {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 50px 80px;
+    max-width: 1170px;
+
+    .single-comic-right {
+        margin-left: 50px;
+        & * {
+            margin-bottom: 10px;
         }
     }
 }

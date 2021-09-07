@@ -11,4 +11,9 @@ class ComiController extends Controller
         $comics = Comic::all();
         return view('comics', compact('comics'));
     }
+    public function singleComic($id) {
+        $comics = Comic::where('id',$id)->first();
+        // dd($comics->id);
+        return view('singleComic', compact('comics'));
+    }
 }
