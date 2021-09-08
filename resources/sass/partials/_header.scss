@@ -37,6 +37,10 @@ header {
                     color: $blue-link;
                 }
             }
+            .active {
+                box-shadow: 0 -2px 0px 0px $blue-link inset;
+                color: $blue-link;
+            }
 
         }
         .container-logo img {

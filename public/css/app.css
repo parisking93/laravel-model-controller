@@ -53,6 +53,10 @@ header .container-center ul li:hover {
 header .container-center ul li:hover a {
   color: #0282f9;
 }
+header .container-center ul .active {
+  box-shadow: 0 -2px 0px 0px #0282f9 inset;
+  color: #0282f9;
+}
 header .container-center .container-logo img {
   height: 80px;
 }
