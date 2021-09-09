@@ -114,6 +114,20 @@ main h1 {
   margin-bottom: 10px;
 }
 
+.box-button {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+.box-button button {
+  color: white;
+  background-color: #0282f9;
+  padding: 5px 25px;
+  border: 1px solid #0282f9;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 footer {
   width: 100%;
 }
@@ -191,4 +205,33 @@ footer .footer-center .footer-center-box .footer-center-right {
   background-image: url("/img/dc-logo-bg.png");
   background-size: cover;
   background-position: center;
+}
+footer .footer-down {
+  height: 80px;
+  background-color: #303030;
+}
+footer .footer-down .box-footer-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+footer .footer-down .box-footer-down button {
+  color: white;
+  background-color: #303030;
+  padding: 10px;
+  border: 2px solid #0282f9;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+footer .footer-down .box-footer-down .box-social {
+  display: flex;
+  align-items: center;
+}
+footer .footer-down .box-footer-down .box-social h2 {
+  color: #0282f9;
+  text-transform: uppercase;
+  margin-right: 30px;
 }
